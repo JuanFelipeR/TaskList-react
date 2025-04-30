@@ -7,5 +7,32 @@
     other sylesheets into your bunde as well, e.j:
     
     import 'relative/path/to/stylesheet.scss';
+    
 
 */
+.sticky-note {
+    background-color: #fff8a6; /* amarillo suave */
+    border: 1px solid #f2e394;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    transform: rotate(-1deg);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: transform 0.2s ease;
+}
+  
+.sticky-note:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 5px 5px 5px rgba(241, 245, 10, 0.925);
+    
+}
+  
+  
