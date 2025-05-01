@@ -7,7 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   const [inputTask, setInpuntTask] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([]); // Estado para almacenar las tareas
+  
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && inputTask.trim() !== "") {
@@ -29,6 +30,9 @@ export default function Home() {
     <div className="container">
       <div className="container mt-4">
 		<h1 className="text-center">Task List</h1>
+        <label htmlFor="taskInput" className="form-label mt-3">
+          {`Pending tasks:  (${tasks.length})`}
+        </label>
         <input
           type="text"
           className="form-control"
